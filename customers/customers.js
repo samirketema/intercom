@@ -56,11 +56,11 @@ function findCustomersInRange() {
 }
 
 //Sort the customers according to their user_id.
-function sortCustomers(customers) {
-    customers.sort(function(a, b) {
+function sortCustomers(customersArray) {
+    customersArray.sort(function(a, b) {
         return a.user_id - b.user_id;
     });
-    return customers;
+    return customersArray;
 }
 
 //Call the function that finds if our customers are in range.
