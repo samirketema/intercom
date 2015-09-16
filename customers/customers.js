@@ -28,7 +28,7 @@ var office = {
     "longitude": degreesToRadians(-6.2592576)
 };
 
-//Returns a list of cusomters that are within the 100km range we need.
+//Returns a list of customers that are within the 100km range we need.
 function findCustomersInRange() {
     var invitedCustomers = [];
     lines.forEach(function(line) {
