@@ -65,6 +65,6 @@ function sortCustomers(customers) {
 
 //Call the function that finds if our customers are in range.
 var customers = findCustomersInRange();
-customers.forEach(function(c, i) {
+customers.forEach(function(c) {
     console.log(c);
 });
