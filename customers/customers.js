@@ -31,7 +31,7 @@ var office = {
 //Returns a list of cusomters that are within the 100km range we need.
 function findCustomersInRange() {
     var invitedCustomers = [];
-    lines.forEach(function(line, index) {
+    lines.forEach(function(line) {
         //Parse JSON for current Customer.
         var customer = JSON.parse(line);
 
