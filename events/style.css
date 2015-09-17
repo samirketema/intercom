@@ -1,0 +1,28 @@
+.bg-blue {
+    background-color: #71bbd2;
+}
+
+.bg-white {
+    background-color: #F0F0F0;
+}
+
+.tight-wrap-center{
+    text-align: center;
+}
+
+.no-top-border{
+    border-top: none;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Droid Sans Mono';
+}
+
+h6 {
+    font-family: 'Droid Sans Mono';
+    background: #f4f4f4;
+}
+
+p, div, button {
+    font-family: 'Droid Sans Mono';
+}
