@@ -21,7 +21,9 @@ function populateEventModal(eventListing) {
         //handle if the event is cancelled.
         if (currEvent.hasOwnProperty("cancelled") && currEvent.cancelled === true) {
             $("#eventText").append("<br/><p>CANCELLED:<br/><strike><u>" +
-                currEvent.occasion + "</u><br>" + currEvent.invited_count + " people invited</strike></p>");
+                currEvent.occasion + "</u><br/>" + currEvent.invited_count + " people invited <br/>" +
+                currEvent.date.format(
+                    "dddd, MMMM Do YYYY") + "</strike></p>");
         } else {
             var isoDate = currEvent.date.format("YYYYMMDD[T]SSSSSS[Z]");
             var link = "https://www.google.com/calendar/render?action=TEMPLATE&text=" + currEvent.occasion.split(
