@@ -57,7 +57,6 @@ $("#calendar").clndr({
     clickEvents: {
         click: function(target) {
             eventView = [];
-            // = {};
             $("#eventListTitle").empty();
             $("#eventText").empty();
             $("#eventListTitle").append("Events on " + target.date.format("dddd, MMMM Do YYYY"));
