@@ -1,1 +1,40 @@
-project page
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>intercom calendar</title>
+</head>
+<body>
+    <div class="bg-white text-center">
+        <h2 class="text-center">Intercom Events</h2>
+        <span class="text-center"> Green days have scheduled events, white days don't! </span>
+        <button id="listButton" class="btn text-right">See All Events</button>
+    </div>
+    <div class="tight-wrap-center">
+        <div id="calendar" class="cal1">
+        </div>
+    </div>
+    <div id="eventModal" class="modal fade" role="dialog" data-events="eventArray">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-body">
+            <h3 id="eventListTitle"></h3>
+            <div id="eventText" class="text-center"></div>
+          </div>
+          <div class="modal-footer no-top-border">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <link rel="stylesheet" href="lib/css/clndr.css">
+    <link rel="stylesheet" href="lib/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="events/lib/js/jquery.min.js"></script>
+    <script src="events/lib/js/moment.min.js"></script>
+    <script src="events/lib/js/underscore.min.js"></script>    
+    <script src="events/lib/js/clndr.min.js"></script>  
+    <script src="events/lib/js/bootstrap.min.js"></script>
+    <script src="events/input.js"></script>
+    <script src="events/clndr-script.js"></script>
+</body>
+</html>
