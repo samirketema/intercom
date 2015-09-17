@@ -6,7 +6,7 @@ input.events.forEach(function(currEvent) {
     temp.invited_count = currEvent.invited_count;
 
     //Store as moment() for clndr
-    temp.date = moment.utc(currEvent.year.toString() + "-" +
+    temp.date = moment(currEvent.year.toString() + "-" +
         currEvent.month.toString() + "-" +
         currEvent.day.toString(), "YYYY-MM-DD"
     );
